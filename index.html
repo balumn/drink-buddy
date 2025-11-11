@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drink Buddy Chatbot</title>
+  <script src="https://cdn.platform.openai.com/deployments/chatkit/chatkit.js" async></script>
+</head>
+<body>
+  <div id="chat" style="height: 100vh;"></div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      window.chatkit?.mount({
+        selector: '#chat',
+        domainKey: 'domain_pk_6912c700d80c81908a6afde93411d898030ae645ca45540f',
+        theme: 'auto'
+      });
+    });
+  </script>
+</body>
+</html>
