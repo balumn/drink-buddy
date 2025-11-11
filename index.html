@@ -16,6 +16,11 @@
         domainKey: 'domain_pk_6912c700d80c81908a6afde93411d898030ae645ca45540f',
         theme: 'auto'
       });
+
+    // Mount when ChatKit is ready (works with async script)
+    window.addEventListener('chatkit:ready', mountChat);
+    // Fallback in case it loaded earlier
+    if (window.chatkit) mountChat();
     });
   </script>
 </body>
